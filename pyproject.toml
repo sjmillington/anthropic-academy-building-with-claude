@@ -1,0 +1,24 @@
+[project]
+name = "anthropic-building-with-claude"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "sam-tmtc", email = "88487726+sam-tmtc@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+anthropic-building-with-claude = "anthropic_building_with_claude:main"
+lab = "anthropic_building_with_claude.lab:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.1",
+    "pip>=26.2.1",
+]
