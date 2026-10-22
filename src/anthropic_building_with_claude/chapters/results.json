@@ -1,0 +1,92 @@
+[
+  {
+    "test_case": {
+      "scenario": "Typical male endurance athlete aiming to build muscle with no dietary restrictions (baseline case).",
+      "prompt_inputs": {
+        "height": "180",
+        "weight": "78",
+        "goal": "Build lean muscle mass while maintaining endurance",
+        "restrictions": "None"
+      },
+      "solution_criteria": [
+        "Provides a 1-day plan with breakfast, lunch, dinner, and at least one snack or pre/post-workout meal",
+        "Includes an approximate total calorie target and protein amount suitable for muscle gain (about 1.6-2.2 g/kg protein)",
+        "Output is compact and concise, without long explanations or multi-day content"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete"
+    },
+    "output": "# One-Day Meal Plan: Lean Muscle Gain with Endurance Maintenance\n\n**Athlete:** 180 cm, 78 kg, no dietary restrictions\n**Assumptions:** Training about 5\u20136 days a week, with a session around 17:30\u201318:30. Adjust the timing if your session differs.\n\n## Daily Targets and Totals\n\n| | Target | Plan Total |\n|---|---|---|\n| **Calories** | ~3,000 kcal (small surplus) | **\u22483,054 kcal** |\n| **Protein** | 1.8\u20132.5 g/kg | **\u2248200 g** (2.6 g/kg) |\n| **Carbohydrates** | 4.5\u20135 g/kg | **\u2248372 g** (4.8 g/kg) |\n| **Fat** | ~1 g/kg | **\u224890 g** (1.2 g/kg) |\n\n*Calories were summed from each food. Multiplying the macros by 4/4/9 gives about 3,096 kcal, and the small difference comes from fiber and rounding.*\n\n## Meal Schedule\n\n### 07:00 \u2013 Breakfast\n| Food | Amount |\n|---|---|\n| Rolled oats (dry) | 80 g |\n| Whole milk | 250 g |\n| Banana | 120 g |\n| Whole eggs (2 large, scrambled or boiled) | 100 g |\n\n**\u2248714 kcal | P 35 g | C 93 g | F 24 g**\n\n### 10:30 \u2013 Mid-Morning Snack\n| Food | Amount |\n|---|---|\n| Nonfat Greek yogurt | 200 g |\n| Blueberries | 100 g |\n| Honey | 15 g |\n| Almonds | 15 g |\n\n**\u2248308 kcal | P 24 g | C 37 g | F 9 g**\n\n### 13:00 \u2013 Lunch\n| Food | Amount |\n|---|---|\n| Chicken breast (cooked, grilled) | 150 g |\n| White rice (cooked) | 300 g |\n| Broccoli (steamed) | 150 g |\n| Olive oil | 10 g |\n\n**\u2248778 kcal | P 58 g | C 95 g | F 17 g**\n\n### 16:30 \u2013 Pre-Workout Snack (60\u201390 min before training)\n| Food | Amount |\n|---|---|\n| Whole wheat bread (about 2 slices) | 70 g |\n| Peanut butter | 15 g |\n| Banana | 120 g |\n\n**\u2248368 kcal | P 14 g | C 59 g | F 10 g**\n\n### 18:45 \u2013 Post-Workout Shake (within 30\u201345 min after training)\n| Food | Amount |\n|---|---|\n| Whey protein powder | 30 g |\n| Whole milk | 250 g |\n\n**\u2248273 kcal | P 32 g | C 14 g | F 10 g**\n\n### 20:00 \u2013 Dinner\n| Food | Amount |\n|---|---|\n| Salmon (cooked, baked) | 120 g |\n| Sweet potato (baked) | 300 g |\n| Broccoli (steamed) | 150 g |\n| Olive oil | 5 g |\n\n**\u2248614 kcal | P 36 g | C 73 g | F 20 g**\n\n## Summary by Meal\n\n| Meal | Time | kcal | P (g) | C (g) | F (g) |\n|---|---|---|---|---|---|\n| Breakfast | 07:00 | 714 | 35 | 93 | 24 |\n| Snack | 10:30 | 308 | 24 | 37 | 9 |\n| Lunch | 13:00 | 778 | 58 | 95 | 17 |\n| Pre-workout | 16:30 | 368 | 14 | 59 | 10 |\n| Post-workout | 18:45 | 273 | 32 | 14 | 10 |\n| Dinner | 20:00 | 614 | 36 | 73 | 20 |\n| **Total** | | **\u22483,054** | **\u2248200** | **\u2248372** | **\u224890** |\n\n## Notes\n- **Weights:** Rice, chicken, salmon, sweet potato, and broccoli are cooked weights. Oats are dry weight.\n- **Hydration:** Aim for about 3,000 g (3 L) of water across the day, plus extra during training.\n- **Adjusting:** If weight gain exceeds about 0.25\u20130.5 kg per week, reduce rice or sweet potato by 50\u2013100 g. If you're not gaining, add about 50 g of cooked rice to lunch and dinner. On heavy endurance days, add carbs around training. On rest days, reduce the pre-workout snack and some of the carbs.\n- **Budget:** The foods are inexpensive staples (oats, rice, eggs, chicken, bananas, milk). Frozen blueberries and broccoli work just as well. Canned salmon or chicken thighs can replace the salmon fillet to save money.",
+    "strengths": [
+      "Meets every extra criterion: daily calorie total (~3,054 kcal), a macro breakdown, and meals with exact foods, gram portions and clock times. The per-meal figures sum correctly to the stated totals.",
+      "Covers breakfast, lunch, dinner, a mid-morning snack, and pre- and post-workout meals. The plan is sensible for lean gain with endurance work, with carbs timed around training."
+    ],
+    "weaknesses": [
+      "Not compact or concise. It repeats the same numbers in per-meal lines and again in a summary table, and adds long notes on hydration, adjusting and budget. This goes against the 'compact, concise' requirement.",
+      "Protein is ~200 g (2.6 g/kg), above both the stated 1.8\u20132.5 g/kg target and the 1.6\u20132.2 g/kg guideline. Fat is also above its stated ~1 g/kg target, so the plan does not match its own targets.",
+      "Carbs at ~4.8 g/kg are modest for an athlete maintaining endurance. The 3,000 kcal surplus is assumed with no justification of how it was derived."
+    ],
+    "reasoning": "The plan is complete and numerically consistent, with timing, portions, calories and macros all present, so the extra criteria are satisfied. Its main faults are length and redundancy, which conflict with the compact-and-concise requirement, and protein that overshoots the stated target range. It is useful and accurate but not compact, so it lands in the upper-middle range.",
+    "score": 6
+  },
+  {
+    "test_case": {
+      "scenario": "Vegan female athlete with a gluten allergy and a weight-loss goal, testing multiple combined restrictions.",
+      "prompt_inputs": {
+        "height": "165",
+        "weight": "62",
+        "goal": "Lose 3 kg of body fat while preserving muscle for a CrossFit competition",
+        "restrictions": "Vegan, gluten-free (celiac), no soy"
+      },
+      "solution_criteria": [
+        "Contains no animal products, gluten-containing ingredients (wheat, barley, rye), or soy products",
+        "Uses plant protein sources such as legumes, quinoa, or seeds to reach adequate protein intake",
+        "Indicates a modest calorie deficit appropriate for the athlete's size without being extreme",
+        "Stays compact and concise with a clear single-day structure"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete"
+    },
+    "output": "# One-Day Vegan, Gluten-Free, Soy-Free Meal Plan (CrossFit Fat Loss)\n\n## Assumptions\n- Height 165 cm, weight 62 kg. Age, sex and training time weren't given, so I assumed an adult training 5-6 days a week, with the session at about 17:30-19:00.\n- Estimated maintenance is about 2,400-2,500 kcal. This plan uses a moderate deficit of about 15%, or roughly 2,090 kcal. That should give about 0.4 kg of fat loss per week, so 3 kg in about 7-8 weeks, which is slow enough to protect muscle and performance.\n- Protein is set at about 2 g/kg and carbs are kept high around training.\n- All weights are in grams. Grains, legumes and oats are cooked weights unless stated as dry.\n\n## Daily Totals\n| Calories | Protein | Fat | Carbs (incl. ~50 g fiber) |\n|---|---|---|---|\n| **~2,090 kcal** | **~123 g** | **~52 g** | **~300 g** |\n\n## Meal Schedule\n\n### 07:00, Breakfast: Protein Oats (~605 kcal | P 41 | F 14 | C 83)\n| Food | Amount |\n|---|---|\n| Certified gluten-free rolled oats (dry) | 70 g |\n| Soy-free pea protein powder | 30 g |\n| Banana, sliced | 120 g |\n| Chia seeds | 15 g |\n| Unsweetened almond milk | 250 g |\n\n### 12:30, Lunch: Lentil-Quinoa Power Bowl (~631 kcal | P 32 | F 22 | C 83)\n| Food | Amount |\n|---|---|\n| Cooked green or brown lentils | 200 g |\n| Cooked quinoa | 150 g |\n| Baby spinach | 60 g |\n| Cherry tomatoes | 100 g |\n| Cucumber | 100 g |\n| Extra virgin olive oil | 10 g |\n| Pumpkin seeds | 15 g |\n| Lemon juice, salt, herbs | to taste |\n\n### 16:30, Pre-Workout Snack (~205 kcal | P 4 | F 1 | C 47)\n| Food | Amount |\n|---|---|\n| Plain rice cakes (certified GF) | 30 g |\n| Banana | 100 g |\n\nThis is low in fat and fiber, so it digests quickly before training.\n\n### 19:00, Post-Workout Shake (~113 kcal | P 24 | F 2 | C 1)\n| Food | Amount |\n|---|---|\n| Soy-free pea protein powder | 30 g |\n| Water | 300 g |\n\n### 19:45, Dinner: Chickpea & Broccoli Coconut Curry (~532 kcal | P 22 | F 13 | C 86)\n| Food | Amount |\n|---|---|\n| Cooked chickpeas | 150 g |\n| Broccoli florets, steamed or saut\u00e9ed | 150 g |\n| Canned coconut milk | 40 g |\n| Cooked basmati rice | 120 g |\n| Turmeric, cumin, ginger, garlic, salt | to taste (check spice blends are GF) |\n\n## Meal Totals\n| Meal | kcal | Protein (g) | Fat (g) | Carbs (g) |\n|---|---|---|---|---|\n| Breakfast | 605 | 41 | 14 | 83 |\n| Lunch | 631 | 32 | 22 | 83 |\n| Pre-workout | 205 | 4 | 1 | 47 |\n| Post-workout shake + dinner | 645 | 46 | 15 | 87 |\n| **Total** | **2,086** | **123** | **52** | **300** |\n\nValues are estimates from standard food-composition data, and brands vary slightly.\n\n## Celiac and Restriction Notes\n- Oats must be labeled certified gluten-free, because regular oats are usually cross-contaminated.\n- Check the pea protein, rice cakes, almond milk and spice blends for \"gluten-free\" labels. Also check that the protein powder has no soy lecithin.\n- Don't use tofu, tempeh, edamame, soy sauce or tamari. Many \"GF tamari\" products still contain soy.\n- Use separate or thoroughly cleaned cookware and toasters.\n\n## Practical Tips\n- **Drink:** 2.5-3 L of water through the day, plus a pinch of salt around training.\n- **Supplements:** Vegans should take vitamin B12. Consider algae-based omega-3 (EPA/DHA), vitamin D, and iron if blood tests show low levels.\n- **Adjusting:** If you lose more than 0.7 kg a week or performance drops, add about 15 g of peanut butter and 30 g of rice cakes (about +150 kcal). On rest days, cut the pre-workout snack and about 100 g of rice to lower carbs.\n- **Budget:** The plan is built on inexpensive staples: oats, lentils, chickpeas, rice, bananas and seasonal vegetables.",
+    "strengths": [
+      "Fully meets the dietary restrictions: no animal products, no soy, and gluten-free with certified GF oats and cross-contamination warnings. It also flags hidden risks such as soy lecithin and tamari.",
+      "Gives every extra-criteria item: total calories (~2,090), macros, and timed meals with exact gram portions. The per-meal figures sum correctly and match standard food data.",
+      "Protein reaches about 2 g/kg from lentils, quinoa, chickpeas, seeds and pea protein. The ~15% deficit is moderate, with carbs timed around training."
+    ],
+    "weaknesses": [
+      "Not truly compact: the assumptions, restriction notes, practical tips and supplement advice go well beyond a concise one-day plan.",
+      "Fat is fairly low (~52 g, about 22% of calories), and the energy estimate rests on assumed age, sex and training load. Macro calories also sum to ~2,160 against the stated 2,090, a small inconsistency."
+    ],
+    "reasoning": "The plan satisfies all the extra criteria and the restriction, protein-source and calorie-deficit criteria. Meal and total calculations are accurate and internally consistent. The main drawback is verbosity relative to the 'compact, concise' request, plus minor macro-calorie discrepancies and assumptions. Overall it is a high-quality, practical plan.",
+    "score": 8
+  },
+  {
+    "test_case": {
+      "scenario": "Edge case with an underweight, very tall teen-like athlete with conflicting goal and restrictions (wants to cut weight but is already low BMI, plus religious and allergy restrictions).",
+      "prompt_inputs": {
+        "height": "198",
+        "weight": "70",
+        "goal": "Cut weight quickly to make a lower weight class for a wrestling match",
+        "restrictions": "Halal, severe peanut and tree nut allergy"
+      },
+      "solution_criteria": [
+        "Contains no pork, alcohol, or non-halal ingredients and no peanuts or tree nuts",
+        "Avoids recommending extreme or unsafe calorie restriction, dehydration, or crash dieting given the low BMI (about 17.9)",
+        "Includes a brief note or flag that rapid weight cutting is risky or that professional guidance is advisable, while still providing a meal plan",
+        "Remains compact and concise as a one-day plan"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete"
+    },
+    "output": "# One-Day Meal Plan: Wrestler (Halal, Peanut and Tree Nut-Free)\n\n**Assumptions:** 198 cm, 70 kg, with age and training load unknown.\n\n## Safety note first\nAt 198 cm and 70 kg, your BMI is about **17.9**, which is already in the underweight range. A *quick* cut would mostly cost muscle, strength, and hydration, and it raises the risk of injury, illness, and poor performance. So I did **not** build an aggressive crash-diet plan. This plan is high-protein and roughly maintenance-level, which preserves muscle and supports training. Any further weight loss should be small and supervised by a sports dietitian, doctor, or coach. If you are under 18, follow your governing body's weight-certification rules. I don't recommend dehydration, sauna suits, fasting, or laxatives.\n\n## Daily totals\n| Calories | Protein | Fat | Carbs |\n|---|---|---|---|\n| **~2,730 kcal** | **~195 g** (\u22482.8 g/kg) | **~71 g** | **~329 g** |\n\n## Meal schedule\n\n**7:00 \u2013 Breakfast** (~786 kcal | P 42 g | F 29 g | C 94 g)\n- Rolled oats, dry: 80 g\n- Whole milk: 250 g\n- Banana: 120 g\n- Whole eggs, 3 large, boiled or scrambled without added oil: 150 g\n\n**10:30 \u2013 Snack** (~251 kcal | P 27 g | F 1 g | C 36 g)\n- Nonfat Greek yogurt: 250 g\n- Blueberries: 100 g\n- Honey: 15 g\n\n**13:00 \u2013 Lunch** (~760 kcal | P 66 g | F 18 g | C 81 g)\n- Halal chicken breast, grilled, cooked weight: 180 g\n- White rice, cooked: 250 g\n- Steamed broccoli and carrots: 150 g\n- Olive oil: 10 g\n\n**16:00 \u2013 Pre-training snack** (~376 kcal | P 22 g | F 5 g | C 63 g)\n- Whole-wheat pita: 60 g\n- Low-fat cottage cheese: 150 g\n- Apple: 180 g\n\n**19:30 \u2013 Dinner / recovery** (~554 kcal | P 39 g | F 19 g | C 56 g)\n- Baked salmon, cooked weight: 150 g\n- Baked sweet potato: 250 g\n- Green salad with lemon juice: 100 g\n\n## Hydration\nDrink about 3\u20134 L of water spread through the day. Do not restrict fluids.\n\n## Allergy and halal checklist\n- Buy meat that is **certified halal**. Avoid gelatin, alcohol-based flavorings, and non-halal additives.\n- Read labels for \"may contain peanuts or tree nuts\" warnings. Oats, pita, and yogurt are common cross-contact products, so choose certified nut-free brands.\n- Avoid nut oils and nut-based spreads. Pesto, granola, and some protein bars often contain nuts.\n\nCalories and macros are estimates based on standard food-composition values, and actual numbers vary by brand and cooking method.",
+    "strengths": [
+      "Meets every safety and dietary constraint: all foods are halal-compatible and nut-free, and it flags label cross-contact and gelatin risks.",
+      "Opens with a clear safety note that the BMI is about 17.9 and refuses crash dieting, dehydration, or laxatives. It recommends professional supervision and still delivers a usable plan.",
+      "Gives all the required elements: a daily calorie total, a macro breakdown, and timed meals with gram portions. The meal and daily numbers are internally consistent and plausible."
+    ],
+    "weaknesses": [
+      "Calories are set at roughly maintenance, so the plan does not actually help with the stated goal of cutting weight. It offers no guidance on a modest, safe deficit.",
+      "Not very compact: the long safety note, hydration section, and checklist add length to what should be a concise one-day plan.",
+      "Assumes a high training load and an unspecified age, and the plan has five meals with many items, which makes it less streamlined."
+    ],
+    "reasoning": "The output satisfies the extra criteria (calories, macros, timed meals with exact portions) and all the safety and dietary constraints. The numbers add up correctly and are realistic. It handles the risky request responsibly by flagging the underweight BMI and recommending professional guidance. Its main shortcomings are that it largely sidesteps the weight-cut goal by prescribing maintenance calories and that it is somewhat wordier than 'compact and concise' implies.",
+    "score": 8
+  }
+]

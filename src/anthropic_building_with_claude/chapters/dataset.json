@@ -1,0 +1,49 @@
+[
+  {
+    "scenario": "Typical male endurance athlete aiming to build muscle with no dietary restrictions (baseline case).",
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "78",
+      "goal": "Build lean muscle mass while maintaining endurance",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Provides a 1-day plan with breakfast, lunch, dinner, and at least one snack or pre/post-workout meal",
+      "Includes an approximate total calorie target and protein amount suitable for muscle gain (about 1.6-2.2 g/kg protein)",
+      "Output is compact and concise, without long explanations or multi-day content"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete"
+  },
+  {
+    "scenario": "Vegan female athlete with a gluten allergy and a weight-loss goal, testing multiple combined restrictions.",
+    "prompt_inputs": {
+      "height": "165",
+      "weight": "62",
+      "goal": "Lose 3 kg of body fat while preserving muscle for a CrossFit competition",
+      "restrictions": "Vegan, gluten-free (celiac), no soy"
+    },
+    "solution_criteria": [
+      "Contains no animal products, gluten-containing ingredients (wheat, barley, rye), or soy products",
+      "Uses plant protein sources such as legumes, quinoa, or seeds to reach adequate protein intake",
+      "Indicates a modest calorie deficit appropriate for the athlete's size without being extreme",
+      "Stays compact and concise with a clear single-day structure"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete"
+  },
+  {
+    "scenario": "Edge case with an underweight, very tall teen-like athlete with conflicting goal and restrictions (wants to cut weight but is already low BMI, plus religious and allergy restrictions).",
+    "prompt_inputs": {
+      "height": "198",
+      "weight": "70",
+      "goal": "Cut weight quickly to make a lower weight class for a wrestling match",
+      "restrictions": "Halal, severe peanut and tree nut allergy"
+    },
+    "solution_criteria": [
+      "Contains no pork, alcohol, or non-halal ingredients and no peanuts or tree nuts",
+      "Avoids recommending extreme or unsafe calorie restriction, dehydration, or crash dieting given the low BMI (about 17.9)",
+      "Includes a brief note or flag that rapid weight cutting is risky or that professional guidance is advisable, while still providing a meal plan",
+      "Remains compact and concise as a one-day plan"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete"
+  }
+]
